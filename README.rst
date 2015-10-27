@@ -10,15 +10,12 @@ DECam Tools
 Overview
 ********
 
-DECam Tools is a python package designed to aid observers in processing and analyzing their
+DECam Tools was a python package designed to aid observers in processing and analyzing their
 DECam images that have already been processed by the Community Pipeline. Most of the scripts
 work with the InstCal files although users can really use files generated at any stage in the
 Community pipeline including raw images, resampled images, and stacks.
 
-In addition to allowing users to customize the resampling and stacking of images, DECam Tools
-also provides a number of tools for post-pipeline analysis including object detection, 
-calibration with SDSS fields, photometry, and the creation of a sqlite database to keep
-track of images by cataloging them by the most important fields in the DECam headers.
+I have since created the astropyp_ package, which includes functions for running AstrOmatic software like SExtractor, advanced photometry tools for calibrating images, and functions specific to specific instruments, like DECam. So all future updates for my DECam analysis will be in astropyp_ and decam-tools will no longer be maintained.
 
 
 Acknowledgement
@@ -38,3 +35,5 @@ Status reports for developers
 
 .. image:: https://coveralls.io/repos/fred3m/decam-tools/badge.svg?branch=master&service=github 
     :target: https://coveralls.io/github/fred3m/decam-tools?branch=master
+
+.. _astropyp: https://github.com/fred3m/astropyp
